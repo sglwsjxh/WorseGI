@@ -1,3 +1,23 @@
+This is an open-source WorseGI auxiliary program.
+
+It is based on Python's mss for real-time screen monitoring and pyautogui for mouse and keyboard simulation.
+
+It can perform operations such as automatic teleportation and automatic picking up.
+
+The following third-party Python extension libraries need to be installed:
+pyautogui, mss, pydirectinput, keyboard, opencv-python
+
+Copy the following line of code and paste it in PowerShell:
+pip install -U pyautogui mss pydirectinput keyboard opencv-python
+
+Try to create an additional Python virtual environment:
+python -m venv venv
+./venv/Scripts/Activate.ps1
+
+Since Genshin Impact has a high application priority, it will block a large extent of simulated mouse and keyboard operations. Therefore, it needs to be run with administrator privileges.
+
+-----------------------------------------------------------------------------------------
+
 这是一个开源的更差的原神辅助程序
 基于python的mss屏幕实时监控和pyautogui的键鼠模拟
 可以完成自动传送，自动拾取等操作
