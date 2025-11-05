@@ -14,6 +14,9 @@ Try to create an additional Python virtual environment:
 python -m venv venv
 ./venv/Scripts/Activate.ps1
 
+Run code: 
+python main.py
+
 Since Genshin Impact has a high application priority, it will block a large extent of simulated mouse and keyboard operations. Therefore, it needs to be run with administrator privileges.
 
 -----------------------------------------------------------------------------------------
@@ -33,5 +36,8 @@ pip install -U pyautogui mss pydirectinput keyboard opencv-python
 尽量创建一个额外的python虚拟环境：
 python -m venv venv
 ./venv/Scripts/Activate.ps1
+
+运行代码：
+python main.py
 
 由于原神应用的优先级较高，会屏蔽很大程度的模拟键鼠操作，所以运行时需要以管理员权限运行
