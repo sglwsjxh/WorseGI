@@ -29,8 +29,8 @@ pyautogui, mss, pydirectinput, keyboard, opencv-python
 
 复制此行代码并在powershell中粘贴：
 pip install -U pyautogui mss pydirectinput keyboard opencv-python
-尽量创建一个额外的python虚拟环境：
 
+尽量创建一个额外的python虚拟环境：
 python -m venv venv
 ./venv/Scripts/Activate.ps1
 
