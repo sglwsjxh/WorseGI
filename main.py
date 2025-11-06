@@ -23,8 +23,10 @@ def check_game_running():
 
 def launch_game():
     print("启动原神...")
-    subprocess.Popen(r"D:\games\miHoYo Launcher\games\Genshin Impact Game\YuanShen.exe")
-    sleep(10)  # 增加等待时间确保完全启动
+    with open(".\\app_path.txt", 'r', encoding='utf-8') as file:
+        app_path = file.read()
+    subprocess.Popen(app_path)
+    sleep(10)
     
     # 等待登录界面，最多等待30秒
     for _ in range(30):
@@ -60,7 +62,7 @@ def main_loop():
             break
         
         counter += 1
-        sleep(0.15)  # 稍微增加延迟减少CPU使用
+        sleep(0.15)
 
 if __name__ == "__main__":
     # 进入原神
