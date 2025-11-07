@@ -11,7 +11,8 @@ TEMPLATES = {
     'teleport': r".\models\传送按键.png", 
     'interact': r".\models\交互按键F.png",
     'dialog': r".\models\对话按键.png",
-    'exit': r".\models\退出至桌面.png"
+    'exit': r".\models\退出至桌面.png",
+    'autodialog': r".\models\对话记录.png"
 }
 
 def check_game_running():
@@ -50,11 +51,18 @@ def main_loop():
         # 自动传送 - 每次循环都检查
         auto_click.auto_click(TEMPLATES['teleport'])
         
-        # 自动拾取 - 每2次循环检查一次，减少图像处理频率
+        # 自动对话 - 每2次循环检查一次
+        if counter % 3 == 0:
+            if(auto_click.get_xy(TEMPLATES['autodialog'])):
+                pa.press('f')
+                continue
+
+        # 自动拾取 - 每2次循环检查一次
         if counter % 2 == 0:
             if (auto_click.get_xy(TEMPLATES['interact']) and not auto_click.get_xy(TEMPLATES['dialog'])):
                 pa.press('f')
-        
+                continue
+            
         # 自动退出
         if auto_click.auto_click(TEMPLATES['exit']):
             os.system('cls')
