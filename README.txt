@@ -14,6 +14,8 @@ Try to create an additional Python virtual environment:
 python -m venv venv
 ./venv/Scripts/Activate.ps1
 
+Before running, please copy your Genshin Impact game executable to the app_path.txt file.
+
 Run code: 
 python main.py
 
@@ -36,6 +38,8 @@ pip install -U pyautogui mss pydirectinput keyboard opencv-python
 尽量创建一个额外的python虚拟环境：
 python -m venv venv
 ./venv/Scripts/Activate.ps1
+
+在运行之前，请将你的原神游戏本体复制到app_path.txt中
 
 运行代码：
 python main.py
