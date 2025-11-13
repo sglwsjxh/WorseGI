@@ -8,7 +8,7 @@ The following third-party Python extension libraries need to be installed:
 pyautogui, mss, pydirectinput, keyboard, opencv-python
 
 Copy the following line of code and paste it in PowerShell:
-pip install -U pyautogui mss pydirectinput keyboard opencv-python
+pip install -r requirements
 
 Try to create an additional Python virtual environment:
 python -m venv venv
@@ -33,7 +33,7 @@ Since Genshin Impact has a high application priority, it will block a large exte
 pyautogui, mss, pydirectinput, keyboard, opencv-python
 
 复制此行代码并在powershell中粘贴：
-pip install -U pyautogui mss pydirectinput keyboard opencv-python
+pip install -r requirements
 
 尽量创建一个额外的python虚拟环境：
 python -m venv venv
